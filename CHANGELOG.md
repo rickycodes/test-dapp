@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.2.2]
+
 ## [5.2.1]
 ### Uncategorized
 - add Release & Publishing section to README.md
@@ -88,7 +90,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix repository standardization issues ([#118](git+https://github.com/MetaMask/test-dapp/pull/118))
 - Fix addEthereumChain button disable logic ([#93](git+https://github.com/MetaMask/test-dapp/pull/93))
 
-[Unreleased]: https://github.com/rickycodes/test-dapp/compare/v5.2.1...HEAD
+[Unreleased]: https://github.com/rickycodes/test-dapp/compare/v5.2.2...HEAD
+[5.2.2]: https://github.com/rickycodes/test-dapp/compare/v5.2.1...v5.2.2
 [5.2.1]: https://github.com/rickycodes/test-dapp/compare/v5.2.0...v5.2.1
 [5.2.0]: https://github.com/rickycodes/test-dapp/compare/v5.1.1...v5.2.0
 [5.1.1]: https://github.com/rickycodes/test-dapp/compare/v5.1.0...v5.1.1
