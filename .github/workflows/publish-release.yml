@@ -12,6 +12,10 @@ jobs:
       IS_RELEASE: ${{ steps.is-release.outputs.IS_RELEASE }}
     runs-on: ubuntu-latest
     steps:
+      - run: |
+          echo "$GITHUB_CONTEXT"
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
       - uses: MetaMask/action-is-release@v1.0
         id: is-release
 
