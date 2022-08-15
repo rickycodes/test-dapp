@@ -6,12 +6,17 @@ on:
 
 jobs:
   is-release:
-    # release merge commits come from github-actions
-    if: contains(github.event.commits.*.author.name, 'github-actions')
+    # release merge commits come from github-actions[bot]
+    # if: github.event.commits[0].author.name == 'github-actions[bot]'
     outputs:
       IS_RELEASE: ${{ steps.is-release.outputs.IS_RELEASE }}
     runs-on: ubuntu-latest
     steps:
+      - run: |
+          echo "$GITHUB_CONTEXT"
+          exit 1
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
       - uses: MetaMask/action-is-release@v1.0
         id: is-release
 
